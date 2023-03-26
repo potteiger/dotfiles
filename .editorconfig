@@ -1,0 +1,16 @@
+# My go to editorconfig
+root=true
+# Unix newlines, blank newline at end because that is correct.
+end_of_line=lf
+insert_final_newline=true
+# UTF-8. Only sensible move.
+charset=utf-8
+# Actual tabs, 4 columns wide.
+indent_style=tab
+indent_size=4
+tab_width=4
+# Self-explanatory.
+trim_trailing_whitespace=true
+# 80-characters wide
+max_line_length=80
+
