@@ -11,7 +11,7 @@ vim.cmd([[
 	set culopt=number,screenline
 	set nu
 
-	source freebsd.vim
+	source ~/etc/nvim/freebsd.vim
 	call FreeBSD_Style()
 ]])
 
