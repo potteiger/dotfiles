@@ -8,6 +8,7 @@ vim.cmd([[
 	set showcmd
 	set cul
 	set cursorcolumn
+	set colorcolumn=80
 	set culopt=number,screenline
 	set nu
 
