@@ -21,7 +21,7 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu-wl_run -h 30 -nf "#ebdbb2" -nb "#282828" -sf "#ebdbb2" -sb "#fb4934" | xargs swaymsg exec --
+set $menu dmenu-wl_run -h 30 -nf "#d4be98" -nb "#32302f" -sf "#d4be98" -sb "#ea6962" | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -61,6 +61,8 @@ output * bg ~/img/freebsd-gruvbox.png fill
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
+
+exec wlsunset -l 49.4 -L 11.0 -T 5000 -t 3500
 
 ### Key bindings
 #
@@ -216,16 +218,16 @@ bar {
     status_command while ~/etc/sway/status.sh; do sleep 1; done
 
     colors {
-        statusline #ebdbb2
+        statusline #d4be98
         background #3c3836
 
-		focused_workspace #fb493400 #282828 #ebdbb2
+	focused_workspace #ea696200 #32302f #d4be98
         inactive_workspace #504945 #504945 #a899a4
     }
 }
 
-client.focused #fb4934 #282828 #ebdbb2 #cc241d #fb4934
-client.unfocused #928374 #282828 #ebdbb2 #cc241d #3c3836
+client.focused #ea6962 #32302f #d4be98 #ea6962 #ea6962
+client.unfocused #a89984 #32302f #d4be98 #ea6962 #3c3836
 
 default_border pixel 1
 default_floating_border pixel 1
