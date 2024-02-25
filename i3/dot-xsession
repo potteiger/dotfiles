@@ -1,0 +1,8 @@
+
+export LANG=en_US.UTF-8
+. ~/.profile
+#xsetroot -solid "#f2e5bc"
+xwallpaper --maximize ~/img/openbsd.png
+redshift -c ~/etc/redshift.conf &
+exec i3
+

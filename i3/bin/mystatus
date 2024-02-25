@@ -1,0 +1,11 @@
+#!/bin/sh
+
+while :
+do
+    volume=`sndioctl -n output.level`
+    myuptime=`uptime | cut -d "M" -f 2 | cut -d "," -f 1,2` 
+    date "+[ OpenBSD$myuptime ] [ Volume $volume ] [ %Y-%m-%d %H:%M:%S ] "
+
+    sleep 1
+done
+

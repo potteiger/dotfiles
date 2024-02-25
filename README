@@ -1,0 +1,27 @@
+
+
+                             README
+
+
+   I created this dotfiles repository mainly so I can keep
+configs on my OpenBSD machines in sync. Stars of the show are
+i3(1), alacritty(1), and vim(1). Also included is rofi(1),
+redshift(1), and ksh(1).
+
+FILES
+
+   README   -- You're looking at it.
+   Makefile -- A Makefile providing targets for selective or bulk
+      installation, deletion, or restowing of dotfiles using GNU
+      stow(1).
+
+   Remaining files are all dotfiles.
+
+INSTALLATION
+
+   Install all dotfiles:
+
+      make install
+
+Enjoy.
+

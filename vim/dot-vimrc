@@ -1,0 +1,66 @@
+" vim-plug plugins
+"
+call plug#begin('~/.vim/plugged')
+
+Plug 'sainnhe/gruvbox-material'
+Plug 'itchyny/lightline.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
+
+call plug#end()
+
+" gruvbox material
+"
+if has('termguicolors')
+    set termguicolors
+endif
+
+set background=light
+let g:gruvbox_material_background='soft'
+colorscheme gruvbox-material
+
+" default filetype is text
+"
+set filetype=text
+
+" line numbers
+"
+set number
+
+" auto indent / smart indent
+"
+set autoindent
+set smartindent
+
+" text width and color column
+"
+set textwidth=80
+set colorcolumn=81
+
+" line and column highlighting
+"
+set cursorcolumn
+set cursorline
+
+" coordinates
+"
+set ruler
+
+" tabs -> spaces
+"
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+" backspacing
+"
+set backspace=indent,eol,start
+
+" lightline
+"
+set laststatus=2
+let g:lightline = {
+    \ 'colorscheme': 'gruvbox_material',
+    \ }
+
