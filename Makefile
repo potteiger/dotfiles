@@ -1,15 +1,15 @@
 STOW=stow --verbose --dotfiles
 
-install: install-alacritty install-i3 install-ksh install-redshift install-rofi\
-	install-vim
+install: install-alacritty install-i3 install-ksh install-lynx install-redshift\
+	install-rofi install-vim
 	@echo "dotfiles installed"
 
-delete: delete-alacritty delete-i3 delete-ksh delete-redshift delete-rofi \
-	delete-vim
+delete: delete-alacritty delete-i3 delete-ksh delete-lynx delete-redshift \
+	delete-rofi delete-vim
 	@echo "dotfiles deleted"
 
-restow: restow-alacritty restow-i3 restow-ksh restow-redshift restow-rofi \
-	restow-vim
+restow: restow-alacritty restow-i3 restow-ksh restow-lynx restow-redshift \
+	restow-rofi restow-vim
 	@echo "dotfiles restowed"
 
 install-alacritty:
@@ -32,6 +32,13 @@ delete-ksh:
 	$(STOW) --delete ksh
 restow-ksh:
 	$(STOW) --restow ksh
+
+install-lynx:
+	$(STOW) lynx
+delete-lynx:
+	$(STOW) --delete lynx
+restow-lynx:
+	$(STOW) --restow lynx
 
 install-redshift:
 	$(STOW) redshift
