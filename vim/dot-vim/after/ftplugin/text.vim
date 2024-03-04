@@ -11,7 +11,4 @@ setlocal softtabstop=3
 "
 setlocal foldmethod=marker
 setlocal foldmarker=#=,=#
-" goyo
-"
-let g:goyo_width=66
 
