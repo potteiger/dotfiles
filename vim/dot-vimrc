@@ -1,22 +1,3 @@
-" vim-plug plugins
-"
-call plug#begin('~/.vim/plugged')
-
-Plug 'sainnhe/gruvbox-material'
-Plug 'itchyny/lightline.vim'
-
-call plug#end()
-
-" gruvbox material
-"
-if has('termguicolors')
-    set termguicolors
-endif
-
-set background=light
-let g:gruvbox_material_background='soft'
-colorscheme gruvbox-material
-
 " default filetype is text
 "
 set filetype=text
@@ -54,11 +35,4 @@ set expandtab
 " backspacing
 "
 set backspace=indent,eol,start
-
-" lightline
-"
-set laststatus=2
-let g:lightline = {
-    \ 'colorscheme': 'gruvbox_material',
-    \ }
 
