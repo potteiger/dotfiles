@@ -3,12 +3,10 @@
 # sh/ksh initialization
 
 PATH=$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin
+
 export PATH HOME TERM
 
 export ENV=$HOME/.kshrc
-
-GPG_TTY=$(tty)
-export GPG_TTY
 
 XDG_CONFIG_HOME=$HOME/etc
 export XDG_CONFIG_HOME
