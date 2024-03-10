@@ -1,14 +1,10 @@
 " text width and color column
 "
-setlocal textwidth=65
-setlocal colorcolumn=66
+setlocal textwidth=64
+setlocal colorcolumn=65
 " tabs -> spaces
 "
-setlocal tabstop=3
-setlocal shiftwidth=3
-setlocal softtabstop=3
-" fold on set marker
-"
-setlocal foldmethod=marker
-setlocal foldmarker=#=,=#
+setlocal tabstop=2
+setlocal shiftwidth=2
+setlocal softtabstop=2
 

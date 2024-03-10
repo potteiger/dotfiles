@@ -1,7 +1,3 @@
-" default filetype is text
-"
-set filetype=text
-
 " line numbers
 "
 set number
@@ -13,8 +9,8 @@ set smartindent
 
 " text width and color column
 "
-set textwidth=80
-set colorcolumn=81
+set textwidth=79
+set colorcolumn=80
 
 " line and column highlighting
 "
@@ -35,4 +31,7 @@ set expandtab
 " backspacing
 "
 set backspace=indent,eol,start
+
+" ftplugins
+filetype plugin on
 
